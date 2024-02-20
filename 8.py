@@ -9,9 +9,9 @@ timestamp3 = int(time.strftime('%S'))
 print(timestamp3)
 if (5<timestamp1 and timestamp1<12):
     print("Good Morning")
-elif (12<timestamp1 and timestamp1<=16):
+elif (12<=timestamp1 and timestamp1<17):
     print("Good Afternoon")
-elif (16<timestamp1 and timestamp1<23):
+elif (17<=timestamp1 and timestamp1<24):
     print("Good Evening")
 else:
     print("Good Night")
