@@ -9,7 +9,7 @@ print(a.rstrip("@"))
 # Replacing the string
 print(a.replace("magic", "logic")) #this is case sensitive if you write Magic instead of magic it doesn't works
 # Making list from String
-print(a.split("a"))
+print(a.split(" "))
 
 blog = "introduction to python programming"
 print(blog.capitalize()) #Capitalizes only first letter

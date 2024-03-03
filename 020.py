@@ -56,7 +56,7 @@ c = ["0","1,000","2,000","5,000","10,000","20,000","50,000","1,00,000","2,00,000
 import random
 for i in range(1,18):
     s = random.choice(a)
-    print("Q. no.",i)
+    print("Q. no.",i,"For Rs",c[i])
     print(s)
     x = a.index(s)
     ans = input("\nEnter your Answer option: ")
