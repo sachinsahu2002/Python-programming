@@ -1,3 +1,4 @@
+# Solution for leetcode Maximum wealth problem
 # a = [2,3,4,5,6,7]
 # c = sum(a)
 # b = 0

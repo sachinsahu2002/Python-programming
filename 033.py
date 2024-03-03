@@ -1,3 +1,5 @@
+# Solving RansomeNote problem of Leetcode
+
 # head = [1,2,3,4,5]
 # a = len(head)
 # # print(a)
