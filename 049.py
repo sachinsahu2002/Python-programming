@@ -1,3 +1,4 @@
+# Understanding Class
 hello()
 sales1 = 6000
 profit1 = 2000

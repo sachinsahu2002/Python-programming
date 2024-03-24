@@ -12,48 +12,6 @@
 #           G  2  W L D
 
 # Logic
-# def res(y,z):
-#     if (y>z):
-#         return("Won")
-#     elif (y<z):
-#         return("Lose") 
-#     else:
-#        return("Draw")
-
-# import random
-# opt = ["Snake","Water","Gun"]
-# print("RULE: Select 0 for Snake, 1 for Water or 2 for Gun\n")
-# n = int(input("Enter number of matches of Tournament you want to play: "))
-# a = 0
-# b = 0
-# for i in range(n):
-#     z = random.choice(opt)
-#     com = opt.index(z)
-#     reply = int(input("\nSnake, Water or Gun: "))
-#     print(f"\nComputer: {z}, You: {opt[reply]}\n")
-#     if reply==0 and com==1:
-#         print("You Win")
-#         a += 1
-#     elif reply==0 and com==2:
-#         print("You Lose")
-#         b += 1
-#     elif reply==1 and com==0:
-#         print("You Lose") 
-#         b += 1
-#     elif reply==1 and com==2:
-#         print("You Win")
-#         a += 1
-#     elif reply==2 and com==0:
-#         print("You Win")
-#         a += 1
-#     elif reply==2 and com==1:
-#         print("You Lose")
-#         b += 1
-#     else:
-#         print("Match Draw")
-# print(f"\nYou Won {a} matches and Compuer won {b} matches in the Tournament")
-# print(f"\nYou {res(a,b)} the tournament")
-
 def res(y,z):
     if (y>z):
         return("Won")
@@ -63,35 +21,71 @@ def res(y,z):
        return("Draw")
 
 import random
-opt = ["Rock","Paper","Scissor"]
-print("RULE: Select 0 for Rock, 1 for Paper or 2 for Scissor\n")
+opt = ["Snake","Water","Gun"]
+print("RULE: Select 0 for Snake, 1 for Water or 2 for Gun\n")
 n = int(input("Enter number of matches of Tournament you want to play: "))
 a = 0
 b = 0
 for i in range(n):
     z = random.choice(opt)
     com = opt.index(z)
-    reply = int(input("\nRock, Paper or Scissor [enter 0,1 or 2]: "))
+    reply = int(input("\nSnake, Water or Gun: "))
     print(f"\nComputer: {z}, You: {opt[reply]}\n")
-    if reply==0 and com==1:
+    if reply==com:
+        print("Match Draw")
+    elif reply==0 and com==2:
         print("You Lose")
         b += 1
-    elif reply==0 and com==2:
-        print("You Win")
-        a += 1
     elif reply==1 and com==0:
-        print("You Win")
-        a += 1
-    elif reply==1 and com==2:
         print("You Lose") 
         b += 1
-    elif reply==2 and com==0:
+    elif reply==2 and com==1:
         print("You Lose")
         b += 1
-    elif reply==2 and com==1:
+    else:
         print("You Win")
         a += 1
-    else:
-        print("Match Draw")
-print(f"\nTotal you Won {a} and Computer won {b} matches in the Tournament")
-print(f"\nYou {res(a,b)} the Tournament\n")
+print(f"\nYou Won {a} matches and Compuer won {b} matches in the Tournament")
+print(f"\nYou {res(a,b)} the tournament")
+
+# def res(y,z):
+#     if (y>z):
+#         return("Won")
+#     elif (y<z):
+#         return("Lose") 
+#     else:
+#        return("Draw")
+
+# import random
+# opt = ["Rock","Paper","Scissor"]
+# print("RULE: Select 0 for Rock, 1 for Paper or 2 for Scissor\n")
+# n = int(input("Enter number of matches of Tournament you want to play: "))
+# a = 0
+# b = 0
+# for i in range(n):
+#     z = random.choice(opt)
+#     com = opt.index(z)
+#     reply = int(input("\nRock, Paper or Scissor [enter 0,1 or 2]: "))
+#     print(f"\nComputer: {z}, You: {opt[reply]}\n")
+
+#     if reply==com:
+#         print("Match Draw")
+
+#     elif reply==0 and com==1:
+#         print("You Lose")
+#         b += 1
+
+#     elif reply==1 and com==2:
+#         print("You Lose") 
+#         b += 1
+
+#     elif reply==2 and com==0:
+#         print("You Lose")
+#         b += 1
+
+#     else:
+#         print("You Win")
+#         a += 1
+
+# print(f"\nTotal you Won {a} and Computer won {b} matches in the Tournament")
+# print(f"You {res(a,b)} the Tournament")

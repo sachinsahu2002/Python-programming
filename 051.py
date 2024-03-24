@@ -3,16 +3,16 @@ class Details:
   def __init__(self): # Default Constructor
     print("animal Crab belongs to Crustaceans group")
 
-obj1=Details()
+obj1 = Details()
 
 class Person:
     print("This is information about animal and its group")
     def __init__(self, animal, group): # Parameterized constructor
-        self.animal = animal
-        self.group = group
+        self.ani = animal
+        self.gro = group
 
     def info(self):
-        print(f"{self.animal} belongs to {self.group} group")
+        print(f"{self.ani} belongs to {self.gro} group")
 
 a = Person("Crab", "Crustacean")
 b = Person("Fish","Pisces")

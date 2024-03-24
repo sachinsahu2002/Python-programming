@@ -31,7 +31,8 @@ b.name = "Shaman"
 a.age = 20
 b.age = 24
 
-a.info() # Also while calling a fuction of a class "()" is must 
+a.info() # Also while calling a fuction of a class "()" is must
+# people().info() 
 b.info()
 c.info()
 
